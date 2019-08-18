@@ -1,0 +1,24 @@
+Línea 9: Se tiene error en la forma en que está escrito booleaN, debería ser boolean.
+		 Se cambió la última n a minúscula.
+Línea 9: El valor asignado al tipo boolean no es booleano (en este caso se le asignó 0). 
+		 Se le asignó el valor true.
+Línea 10: El typo byte solo puede ir de -128 a 127.
+		 Se le asignó el valor 127.
+Línea 11: Al igual que a byte se le asignó a short un valor fuera de su rango dado que este es de -32768 a 32767.
+		 Se le dió el valor -32768
+Línea 14: No puede encontrar a Discriminente porque fue definida como "discriminante" con minúsculas.
+		 Se cambió la D a d.
+Línea 14: La ecuación está mal identada pues los parentesis no coinciden.
+		 Se agregó un parentesis englobando toda la operacón.
+Línea 14: La operación es de tipo double en vez de long.
+		 Se cambió el tipo de operación a double.
+Línea 17: El tipo está definido como Char en vez de char.
+		 Se cambió la Ch a ch.
+Línea 18: El objeto ch está mal definido.
+		 Se corrigió ch a ch1.
+Línea 18: El valor de ch2 está dentro de "" en vez de '' el cual pertene a los char.
+		 Se corrigieron las "" a ''.
+
+Error de ejecución:
+Línea 19: Había un error dado que no se puede hacer una división entre 0.
+		 Se solucionó con un try catch para que el resultado de int d fuese 0.
