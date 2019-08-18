@@ -17,13 +17,13 @@ public class Sintaxis {
 		char ch1, ch2;
 		ch1 = 'g'; ch2 = 'w';
 		try{
-		int d = 1 / (a - 3);
+			int d = 1 / (a - 3);
 		}catch(ArithmeticException err){
 			int d = 0;
-}
+		}
 
 		// Declaraciones
-		
+			int var_1 = 2147483647;
+			char quote = '\'';
 	}
-
 }
