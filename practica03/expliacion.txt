@@ -1,0 +1,6 @@
+
+PrePost.java
+Se imprime 17 dos veces porque la operación x-- le resta 1 al finalizar de imprimir x por lo que el System.out.print(x) posterior si muestra 16.
+
+Operadores.java
+El primer resultado de 7 porque el tipo int no muestra el residuo decimal y se queda con el valor entero independoentemente de el valor decimal, mientras que el segundo resultado es de tipo double por lo que si muestra los decimales.
