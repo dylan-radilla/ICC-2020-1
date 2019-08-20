@@ -25,4 +25,4 @@ Línea 19: Había un error dado que no se puede hacer una división entre 0.
 
 // Declaraciones
 Línea 26: El tipo Entero (int) tiene como valor máximo 2147483647.
-		 Se redujo el valor dado 2147483648 a 2147483647.
+		 Se agregó una L al final del valor de int para poder asignar dicho valor.

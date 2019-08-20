@@ -23,7 +23,7 @@ public class Sintaxis {
 		}
 
 		// Declaraciones
-			int var_1 = 2147483647;
+			int var_1 =(int) 2147483648L;
 			char quote = '\'';
 	}
 }
