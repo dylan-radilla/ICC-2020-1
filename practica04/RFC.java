@@ -29,7 +29,7 @@ public class RFC {
 		fechaNacimiento = in.nextLine();
 		int d = fechaNacimiento.indexOf("/");
 		int m = fechaNacimiento.lastIndexOf("/");
-		año = fechaNacimiento.substring(m+2, m+4);
+		año = fechaNacimiento.substring(m+3, m+5);
 		mes = fechaNacimiento.substring(d+1, d+3);
 		dia = fechaNacimiento.substring(0, d);
 
@@ -39,7 +39,7 @@ public class RFC {
 
 
 
-		System.out.println("El RFC de " + (nombreCompleto) + " es:" + (rfc));
+		System.out.println("El RFC de " + (nombreCompleto) + " es: " + (rfc));
 
 
 		
