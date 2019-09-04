@@ -8,7 +8,7 @@ public class HeyJude{
 
 	public static void main(String[] args) {
 
-		//Definición de Strings con la letra de la canción.
+	//Definición de Strings con la letra de la canción.
 
 		String JUDE = "Hey Jude";
 
@@ -40,9 +40,15 @@ public class HeyJude{
 
 		String NA = "na ";
 
+	//Definición de tres enteros para usarlos en los ciclos while.
+
 		int j = 0;
 		int n = 1;
 		int b = 0;
+
+	//Uso de ifs dentro de un ciclo while para imprimir la letra
+		//de Hey Jude.
+
 		while (j < 7){
 			if (j == 2 || j == 4 || j == 6){
 					while (n < 11){
