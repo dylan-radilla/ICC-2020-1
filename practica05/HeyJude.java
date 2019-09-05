@@ -34,7 +34,7 @@ public class HeyJude{
 
 		String MAKEBETTER = "to make it better";
 
-		String BETTER = "better ";
+		String BETTER = "better";
 
 		String WAAAA = "waaaa";
 
@@ -102,9 +102,14 @@ public class HeyJude{
 			if (j == 5){
 				while (b<5){
 					System.out.print(BETTER);
+					if (b<4){
+						System.out.print(" ");
+					}else{
+						System.out.print(", " + WAAAA);
+					}
 					b++;
 				}
-				System.out.println(WAAAA);
+				System.out.println();
 			}
 			System.out.println();
 			j++;
