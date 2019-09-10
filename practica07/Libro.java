@@ -34,7 +34,7 @@ public class Libro {
 
 		/**
 		 *Asigna un titulo nuevo.
-		 *@param titulo titulo del libro
+		 *@param titulo nuevo titulo del libro
 		 */
 		public void setTitulo(String titulo){
 			this.titulo=titulo;
@@ -42,7 +42,7 @@ public class Libro {
 
 		/**
 		 *Asigna un autor nuevo.
-		 *@param autor autor del libro
+		 *@param autor nuevo autor del libro
 		 */
 		public void setAutor(String autor){
 			this.autor=autor;
@@ -50,7 +50,7 @@ public class Libro {
 
 		/**
 		 *Asigna un año de publicación nuevo.
-		 *@param añoPub año de publicación del libro
+		 *@param añoPub nuevo año de publicación del libro
 		 */
 		public void setAñoPub(int añoPub){
 			this.añoPub=añoPub;
