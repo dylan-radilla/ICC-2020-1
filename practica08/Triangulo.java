@@ -34,9 +34,9 @@ package geometria;
  	 *@since 1.0
  	 */
  	public Triangulo() {
- 		Punto a = new Punto(0,0);
- 		Punto b = new Punto(1,0);
- 		Punto c = new Punto(0.5,Math.sin(Math.PI/3));
+ 		a = new Punto(0,0);
+ 		b = new Punto(1,0);
+ 		c = new Punto(0.5,Math.sin(Math.PI/3));
 
  	}
  	/**
