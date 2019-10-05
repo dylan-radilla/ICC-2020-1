@@ -2,10 +2,10 @@ package paquete;
 
 import processing.core.PApplet;
 
-public class A extends PApplet {
+public class Tablero extends PApplet {
 
 	public static void main(String[] args) {
-		PApplet.main("paquete.A");
+		PApplet.main("paquete.Tablero");
 	}
 
 	@Override
