@@ -2,6 +2,7 @@ package alglin;
 
 /**
  * Representa una matriz de mxn con entradas en los reales.
+ * 
  * @author Radilla Maldonado Dylan Emmanuel
  * @version 18/10/2019
  */
@@ -56,15 +57,15 @@ public class Matriz {
      * @return una matriz nueva que resulta de sumar esta con <code>otra</code>
      */
     public Matriz sumar(Matriz otra) {
-        if(m == otra.m && n == otra.n){
+        if (m == otra.m && n == otra.n) {
             Matriz resultado = new Matriz(m, n);
             for (int i = 0; i < datos.length; i++) {
                 for (int j = 0; j < datos[0].length; j++) {
                     resultado.datos[i][j] = datos[i][j] + otra.datos[i][j];
                 }
             }
-        return resultado;
-        }else{
+            return resultado;
+        } else {
             return null;
         }
     }
@@ -77,12 +78,12 @@ public class Matriz {
      */
     public Matriz escalar(double c) {
         Matriz mEscalar = new Matriz(m, n);
-        for(int i=0;i<m;i++){
-            for(int j=0;j<n;j++){
-                    mEscalar.datos[i][j]=this.datos[i][j]*c;
-                }
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                mEscalar.datos[i][j] = this.datos[i][j] * c;
             }
-            return mEscalar;
+        }
+        return mEscalar;
     }
 
     /**
@@ -93,11 +94,11 @@ public class Matriz {
      *         matriz
      */
     public Matriz eliminarFila(int k) {
-        Matriz menosk = new Matriz(m-1,n);
+        Matriz menosk = new Matriz(m - 1, n);
         int filak = 0;
-        for(int i=0;i<m;i++){
-            if(i!=k){
-                for(int j =0;j<n;j++){
+        for (int i = 0; i < m; i++) {
+            if (i != k) {
+                for (int j = 0; j < n; j++) {
                     menosk.asignarEntrada(obtenerEntrada(i, j), filak, j);
                 }
                 filak++;
@@ -114,13 +115,13 @@ public class Matriz {
      *         matriz
      */
     public Matriz eliminarColumna(int k) {
-        Matriz sinK = new Matriz(m,n-1);
-        for(int i=0;i<m;i++){
+        Matriz sinK = new Matriz(m, n - 1);
+        for (int i = 0; i < m; i++) {
             int columnak = 0;
-            for(int j=0;j<n;j++){
-                if(j!=k){
-                    sinK.asignarEntrada(obtenerEntrada(i, j),i,columnak);
-                    columnak ++;
+            for (int j = 0; j < n; j++) {
+                if (j != k) {
+                    sinK.asignarEntrada(obtenerEntrada(i, j), i, columnak);
+                    columnak++;
                 }
             }
         }
@@ -133,14 +134,14 @@ public class Matriz {
      * @return el determinante de esta matriz
      */
     public double determinante() {
-        if (n==1){
+        if (n == 1) {
             return obtenerEntrada(0, 0);
         }
         double det = 0;
-        for(int i=0;i<m;i++){
-            double aux = Math.pow(-1,2+i);
+        for (int i = 0; i < m; i++) {
+            double aux = Math.pow(-1, 2 + i);
             Matriz auxiliar = eliminarFila(0).eliminarColumna(i);
-            det += aux*obtenerEntrada(i, 0)*auxiliar.determinante();
+            det += aux * obtenerEntrada(i, 0) * auxiliar.determinante();
         }
         return det;
     }
@@ -158,17 +159,17 @@ public class Matriz {
     @Override
     public String toString() {
         String matrix = "";
-        for(int i=0; i<m; i++){
-            for(int j=0;j<n;j++){
-                if(j!=n-1){
-                    matrix += obtenerEntrada(i,j) + " ";
-                }else{
-                    matrix += obtenerEntrada(i,j);
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (j != n - 1) {
+                    matrix += obtenerEntrada(i, j) + " ";
+                } else {
+                    matrix += obtenerEntrada(i, j);
                 }
             }
-            if(i!=m-1){
+            if (i != m - 1) {
                 matrix += "\n";
-            }else{
+            } else {
                 matrix += "";
             }
         }
