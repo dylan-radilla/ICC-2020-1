@@ -22,8 +22,7 @@ public class Prueba{
 					Peon prueba1 = new Peon(Color.BLANCO,new Posicion(aux1,aux2));
 
       				List<Posicion> jugadas = prueba1.obtenerJugadasLegales();
-      				System.out.print("Movimientos posibles para el peon Blanco en ");
-      				System.out.println("(" + aux1 + "," + aux2 + ") :\n");
+      				System.out.print("Movimientos posibles para el peon Blanco en (" + aux1 + "," + aux2 + "):\n");
      				for (Posicion jugada: jugadas) {
         				System.out.println("Fila: " + jugada.obtenerFila() + "\t" +
                     	       "Columna: " + jugada.obtenerColumna() + "\n");
@@ -33,8 +32,7 @@ public class Prueba{
 		    		Peon prueba2 = new Peon(Color.NEGRO,new Posicion(aux1,aux2));
 
       				List<Posicion> jugadas = prueba2.obtenerJugadasLegales();
-      				System.out.print("Movimientos posibles para el peon Negro en ");
-      				System.out.println("(" + aux1 + "," + aux2 + ") :\n");
+      				System.out.print("Movimientos posibles para el peon Negro en (" + aux1 + "," + aux2 + "):\n");
      				for (Posicion jugada: jugadas) {
 	        			System.out.println("Fila: " + jugada.obtenerFila() + "\t" +
     	                       "Columna: " + jugada.obtenerColumna() + "\n");
